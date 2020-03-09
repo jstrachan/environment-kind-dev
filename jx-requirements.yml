@@ -3,6 +3,7 @@ autoUpdate:
   schedule: ""
 bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-helmfile-config
 cluster:
+  chartRepository: http://bucketrepo/bucketrepo/charts/
   clusterName: kind
   devEnvApprovers:
   - jstrachan
@@ -16,9 +17,10 @@ cluster:
   provider: kubernetes
 environments:
 - ingress:
-    domain: ""
+    domain: 192.168.1.64.nip.io
     externalDNS: false
-    namespaceSubDomain: ""
+    ignoreLoadBalancer: true
+    namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
@@ -48,7 +50,7 @@ environments:
 gitops: true
 helmfile: true
 ingress:
-  domain: "192.168.1.64.nip.io"
+  domain: 192.168.1.64.nip.io
   externalDNS: false
   ignoreLoadBalancer: true
   namespaceSubDomain: -jx.
