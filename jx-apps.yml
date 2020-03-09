@@ -6,6 +6,7 @@ apps:
   version: 0.1.32
 - name: jenkins-x/lighthouse
 - name: jenkins-x/tekton
+- name: stable/docker-registry
 #- name: jenkins-x/chartmuseum
 - name: repositories
   repository: ".."
