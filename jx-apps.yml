@@ -3,7 +3,7 @@ apps:
 - name: jenkins-x/jxboot-helmfile-resources
 #- name: jenkins-x/nexus
 - name: jenkins-x/bucketrepo
-  version: 0.1.31
+  version: 0.1.32
 - name: jenkins-x/lighthouse
 - name: jenkins-x/tekton
 #- name: jenkins-x/chartmuseum
