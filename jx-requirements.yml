@@ -14,6 +14,7 @@ cluster:
   gitPublic: true
   gitServer: https://github.com
   namespace: jx
+  registry: docker-registry.jx.cluster.local
   provider: kubernetes
   registry: localhost:5000
 environments:
