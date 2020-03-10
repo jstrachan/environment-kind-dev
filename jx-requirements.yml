@@ -27,7 +27,7 @@ environments:
       enabled: false
       production: false
   key: dev
-  repository: environment-kind-dev2
+  repository: environment-kind-dev
 - ingress:
     domain: ""
     externalDNS: false
